@@ -20,7 +20,7 @@ jobs:
           java-version: '17'
 
       - name: Build and test with Maven
-        run: mvn clean verify -f ./simple-api/pom.xml
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=appbigdata_org-big-data -Dsonar.organization=appbigdata -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}  --file ./simple-api/pom.xml
   
   
   build-and-push-docker-image:
