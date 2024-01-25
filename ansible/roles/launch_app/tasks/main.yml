@@ -1,0 +1,12 @@
+---
+# tasks file for roles/launch_app
+- name: Run Simple-Api aka Backend
+  docker_container:
+    name: my-api
+    image: aurem02/tp-devops-simple-api:latest
+    networks:
+      - name: my_app_network
+    
+
+
+

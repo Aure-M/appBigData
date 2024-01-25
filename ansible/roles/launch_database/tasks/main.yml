@@ -1,0 +1,8 @@
+---
+# tasks file for roles/launch_database
+- name: Run Database
+  docker_container:
+    name: database
+    image: aurem02/tp-devops-database:latest
+    networks:
+      - name: my_app_network

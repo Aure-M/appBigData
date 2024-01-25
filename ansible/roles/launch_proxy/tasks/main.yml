@@ -1,0 +1,8 @@
+---
+# tasks file for roles/launch_proxy
+- name: Run HTTPD aka Proxy
+  docker_container:
+    name: proxy
+    image: aurem02/tp-devops-httpd:latest
+    ports:
+      - "8080:80"
