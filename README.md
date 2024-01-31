@@ -1,4 +1,3 @@
 # devops-livecoding
 
-RUn
-now
+Runninnngg
